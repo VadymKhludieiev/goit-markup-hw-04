@@ -1,3 +1,12 @@
+:root {
+    --text-color-black: #2e2f42;
+    --text-color-blue: #4d5ae5;
+    --text-color-grey: #434455;
+    --color-white: #F4F4FD;
+    --color-light-blue: #e7e9fc;
+    --color-grey: #8e8f99;
+    --color-dark-blue: #404bbf;
+}
 body {
     font-family: "Roboto", sans-serif;
     Color: #434455;
@@ -41,10 +50,17 @@ img {
 }
 .page-header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
 }
-.add {
+.page-header, 
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* .add {
     display: flex; 
-}
+} */
 .container {
     width: 1158px;
     padding-left: 15px;
@@ -120,6 +136,10 @@ padding: 24px 0;
     color: #404bbf;
 }
 .address-link-address {
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 .address {
     display: flex;
@@ -141,9 +161,26 @@ padding: 24px 0;
 .address-link:focus {
     color: #404bbf;
 }
+.link {
+    text-decoration: none;
+    display: inline-block;
+}
+.list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/banner-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 188px 0;
+    max-width: 1440px;
+    margin: auto;
     background-color: #2e2f42;
-        padding: 188px 0;
+
 }
 .hero-container {
     display: flex;
@@ -176,7 +213,12 @@ padding: 24px 0;
     border: none;
     border-radius: 4px; 
     cursor: pointer; 
-    min-width: 169px
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    background-color: var(--text-color-blue);
+    border-radius: 4px;
+    margin: 0 auto;
 
 }
 

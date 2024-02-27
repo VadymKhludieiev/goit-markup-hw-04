@@ -172,7 +172,7 @@ padding: 24px 0;
     padding: 0;
 }
 .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/banner-bg.jpg);
+    background-image:url('../images/icons/hero-fone.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -242,6 +242,15 @@ padding: 24px 0;
 .features-list-inside {
     width: calc((100% - 72px) / 4); 
 }
+.company__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    border-radius: 4px;
+    background-color: var(--color-cloud);
+    margin-bottom: 8px;
+  }
 .features-header {
     font-family: "Roboto";
     color: #2e2f42;
@@ -276,6 +285,34 @@ padding: 24px 0;
     display: flex; 
     gap: 24px;
 }
+
+.team__list-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  .team__link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-iris);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.team__link-icon:hover,
+.team__link-icon:focus {
+  background-color: var(--color-ocean);
+}
+.team__icon {
+    fill: var(--color-cloud);
+  }
+  .team__item-icon {
+    width: 40px;
+    height: 40px;
+  }
 .our-team-item {
     width: calc((100% - 72px) / 4); 
     color:  #2E2F42;
@@ -397,3 +434,49 @@ padding: 24px 0;
             line-height: 1.5;
             letter-spacing: 0.02em;
 }
+
+.footer__icon-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-white);
+    margin-bottom: 16px;
+  }
+
+.footer__icon-list {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+  }
+
+.footer__icon-item {
+    width: 40px;
+    height: 40px;
+  }
+  
+.footer__icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-iris);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.footer__icon-link:hover,
+.footer__icon-link:focus {
+  background-color: var(--color-green);
+}
+
+.footer__icon {
+    fill: var(--color-cloud);
+  }
+  
+  .footer__icon-link:hover,
+  .footer__icon-link:focus {
+    background-color: var(--color-green);
+  }
+
+  

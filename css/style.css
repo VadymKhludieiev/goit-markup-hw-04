@@ -60,9 +60,7 @@ img {
     align-items: center;
 }
 
-/* .add {
-    display: flex; 
-} */
+
 .container {
     width: 1158px;
     padding-left: 15px;
@@ -407,10 +405,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     row-gap: 48px;
     padding-left: 0;
 }
-/* .portfolio-list:hover,
-.div-portfolio-p:hover {
-    transform: translateY(0%);
-} */
+
 .portfolio-list-conten:hover {
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); ;
 }
@@ -427,10 +422,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     display: inline-block;
     width: 360px;
     height: 420px;
-    /* border: 1px solid #e7e9fc;  */
+    border: 1px solid #e7e9fc;  
     border-top: none; 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* transform: translateY(0%); */
+     transform: translateY(0%); 
 }
 
 .div-portfolio-img {
@@ -438,9 +433,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     overflow: hidden;
     
 }
-/* .div-portfolio-p:hover {
-    transform: translateY(0%);
-} */
+
 .div-portfolio-p {
     position: absolute; 
     top: 0; 
@@ -500,24 +493,24 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
             line-height: 1.5;
             letter-spacing: 0.02em;
 }
-/* 
+
+
+.footer__icon-text {
+    font-weight: 500;
+    font-size: 16px;
+     line-height: 1.5; 
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+}
 .container-footer {
     display: flex;
     align-items: baseline;
 }
 
 .container-footer-logo-p {
-    margin-right: 120px; */
-
-}
-/* .footer__icon-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #FFFFFF;
-    margin-bottom: 16px;
-    letter-spacing: 0.02em;
-  }
+ margin-right: 120px;  
+ }
 
 .footer__icon-list {
     display: flex;
@@ -555,4 +548,3 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     background-color: var(--color-green);
   }
 
-   */

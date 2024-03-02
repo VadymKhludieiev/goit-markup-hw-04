@@ -368,9 +368,8 @@ display: flex;
 }
 
 .social-icons {
-    fill: none ;
-    stroke: #f4f4fd ;
-}
+    fill: #f4f4fd ;
+    
 
 .our-portfolio-list {
     display: flex;
@@ -424,11 +423,17 @@ display: flex;
     transform: translateY(0%);
 }
 
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
 .foot .subsection-paragraph {
-    color: var(--cloud);
+    color: #FFFFFF ;
     display: flex;
     flex-wrap: wrap;
     width: 264px;
+
 }
 
 .foot-slogan {
@@ -437,7 +442,7 @@ display: flex;
 
 .foot-social-title {
     display: block;
-    color: var(--wh);
+    color:  #FFFFFF ;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -457,11 +462,24 @@ display: flex;
 
 .foot-social-item {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 40px;
+    height: 40px;
+    
 }
 
 .foot-social-item .icon-link:hover,
 .foot-social-item .icon-link:focus,
 .foot-social-item .icon-link:active {
     cursor: pointer;
-    background-color: var(--green);
+    background-color: #31d0aa;
+}
+
+.icon-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    display: flex;
+     border-radius: 50%;
+     justify-content: center;
+
 }

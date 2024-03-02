@@ -1,265 +1,33 @@
-:root {
-    --iris: #4d5ae5;
-    --ocean: #404bbf;
-    --n-blue: #2e2f42;
-    --green: #31d0aa;
-    --slate: #434455;
-    --l-slate: #8e8f99;
-    --cornf: #e7e9fc;
-    --cloud: #f4f4fd;
-    --n-blue-mod: rgba(46, 47, 66, 0.4);
-    --grey: rgba(46, 47, 66, 0.7);
-    --wh: #fff;
-    --dairy: #fcfcfc;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 body {
     font-family: "Roboto", sans-serif;
-    line-height: 1.5;
-    color: var(--slate);
-    background-color: var(--wh);
-    letter-spacing: 0.02em;
+    Color: #434455;
+    background: #FFFFFF;
 }
-
-.our-team-general {
-    background-color: var(--cloud);
-    display:inline-block;
-
-}
-
-.foot {
-    background-color: var(--n-blue);
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
+p,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-
-p {
-    margin: 0;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 ul,
 ol {
-    margin: 0;
-    padding-left: 0;
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left:0;
 }
-
-section {
-    padding: 120px 0px;
-}
-
-.container {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-.top-menu .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.container-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.foot .container {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-    display: flex;
-    align-items: baseline;
-}
-
-.top-menu {
-    padding: 24px 0px;
-    border-bottom: 1px solid var(--cornf);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.top-menu a {
+a {
     text-decoration: none;
 }
-
-.nav-bar {
-    display: flex;
-    align-items: center;
+img {
+    display: block ;
 }
 
-.contact-bar {
-    font-style: normal;
-}
-
-.nav-list,
-.contact-list {
-    display: flex;
-    gap: 40px;
-}
-
-.nav-list-item,
-.nav-list-item:link,
-.nav-list-item:visited {
-    font-weight: 500;
-    color:  #404bbf;
-    padding: 24px 0px; 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-list-item:hover,
-.nav-list-item:focus {
-    color: #404bbf;
-}
-
-.state-change {
-    position: relative;
-    /*color: var(--ocean);*/
-    color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.state-change:active::after {
-    content: "";
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    border: none;
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    background-color: #404bbf;
-    z-index: 2;
-}
-
-.contact-list-item,
-.contact-list-item:link,
-.contact-list-item:active,
-.contact-list-item:visited {
-    color: currentColor;
-    font-weight: 400;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-list-item:hover,
-.contact-list-item:focus {
-    color:  #404bbf;
-}
-
-.logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-}
-
-.logo:link,
-.logo:active,
-.logo:hover,
-.logo:focus,
-.logo:visited {
-    color: var(--iris);
-}
-
-.top-menu .logo {
-    margin-right: 76px;
-}
-
-.top-menu .color-break {
-    color: var(--n-blue);
-}
-
-.foot .logo {
-    display: inline-block;
-    margin-bottom: 16px;
-}
-
-.foot .color-break {
-    color: var(--cloud);
-}
-
-.order-service {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url(../images/hero-fone.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    max-width: 1440px;
-    padding: 188px 0;
-    margin: auto;
-}
-
-.order-button {
-    color: var(--wh);
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    background-color: var(--iris);
-    cursor: pointer;
-    display: block;
-    min-width: 169px;
-    height: 56px;
-    margin: 0 auto;
-    padding: 16px 32px;
-    border: none;
-    border-radius: 4px;
-    transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-
-.order-button:hover,
-.order-button:focus {
-    background-color: var(--ocean);
-    cursor: pointer;
-}
-
-.order-slogan {
-    color: var(--wh);
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    margin: 0 auto 48px;
-    max-width: 496px;
-}
-
-.section-header {
-    color: var(--n-blue);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    text-align: center;
-    margin-bottom: 72px;
-}
-
-.pros-general .section-header {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -271,215 +39,319 @@ section {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-.pros-list {
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+.add {
+    display: flex; 
+}
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-nav {
     display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
+    align-items: center; 
+}
+.header-logo {
+    /* display: inline-block; */
+    color: #4D5AE5;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-right: 76px;
+    margin-bottom: 16px; 
+}
+.header-logo-span {
+    margin-right: 76px;
+        color:  #2E2F42;
+    }
+    
+.footer-logo
+{       
+    display: inline-block;
+    color: #4D5AE5;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-right: 76px;
+    margin-bottom: 16px; 
+}
+.footer-logo-features {
+    display: inline-block;
+    color: #f4f4fd;
+    margin-bottom: 16px; 
+    
+    
 }
 
-.pros-list-item {
-    width: 264px;
+
+
+
+.header-studio-logo,
+.footer-studio-logo {
+    color:  #2E2F42;
 }
 
-.pros-icon-plane {
-    background-color:#f4f4fd;;
-    border: 1px solid var(--l-slate);
-    border-radius: 4px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 8px;
-    height: 112px;
-    max-width: 100%;
-    justify-content: center;
-}
+.menu {
+    display: flex; 
+    gap: 40px;
 
-.subsection-header {
-    color: var(--n-blue);
-    font-size: 20px;
+}
+.header-contacts-link {
+    color: #2e2f42;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
+padding: 24px 0;
 }
-
-.our-team-general .subsection-header {
-    text-align: center;
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+    color: #404bbf;
 }
-
-.container-our-team {
-display: flex;
+.address-link-address {
 }
-
-.subsection-paragraph {
+.address {
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
     font-weight: 400;
-}
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 
-.our-team-general .subsection-paragraph {
-    text-align: center;
 }
-
-.our-team-list {
+.address-link {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.address-link:hover,
+.address-link:focus {
+    color: #404bbf;
+}
+.hero {
+    background-color: #2e2f42;
+        padding: 188px 0;
+}
+.hero-container {
     display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-}
-
-.team-card {
-    background-color: var(--wh);
-    border: none;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
-}
-
-.team-card .subsection-paragraph {
-    margin-bottom: 8px;
-}
-
-.card-tag {
-    padding: 32px 0px;
-}
-
-.team-social-list {
-    display: flex;
-    gap: 24px;
-    margin: 0 16px;
-    justify-content: center;
-}
-
-.icon-link {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: var(--iris);
-    border: none;
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social-item .icon-link:hover,
-.team-social-item .icon-link:focus,
-.team-social-item .icon-link:active {
+.hero-title {
+    color: #ffffff;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    background-color: #2e2f42;
+    max-width: 496px;
+}
+.hero-button {
+    color:  #FFF;
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background: #4D5AE5;
+    display: block; 
+    max-width: 169px;
+    height: 56px ;
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer; 
+    min-width: 169px
+
+}
+
+.hero-button:hover,
+.hero-button:focus {
     cursor: pointer;
     background-color: #404bbf;
 }
 
-.social-icons {
-    fill: #f4f4fd ;
-    
 
-.our-portfolio-list {
-    display: flex;
-    row-gap: 48px;
-    column-gap: 24px;
-    flex-wrap: wrap;
+.features  {
+    padding: 120px 0;
+}
+.features-strategy {
 }
 
-.portfolio-card .card-tag {
-    padding: 32px 16px;
-    border-bottom: 1px solid var(--cornf);
-    border-left: 1px solid var(--cornf);
-    border-right: 1px solid var(--cornf);
+.features-list {
+    display: flex; 
+    gap: 24px; 
 }
-
-.portfolio-card:hover {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-        0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+.features-list-inside {
+    width: calc((100% - 72px) / 4); 
 }
-
-.our-portfolio-list .transitional {
-    position: relative;
-    overflow: hidden;
-    width: 360px;
-    border: none;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.slide-card {
-    position: relative;
-    overflow: hidden;
-}
-
-.slide-text {
-    position: absolute;
-    top: 0;
-    padding: 40px 32px;
-    width: 100%;
-    height: 100%;
-    background-color: var(--iris);
-    color: var(--cloud);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.transitional:focus .slide-text,
-.transitional:hover .slide-text {
-    transform: translateY(0%);
-}
-
-.footer-container {
-    display: flex;
-    align-items: baseline;
-}
-
-.foot .subsection-paragraph {
-    color: #FFFFFF ;
-    display: flex;
-    flex-wrap: wrap;
-    width: 264px;
-
-}
-
-.foot-slogan {
-    margin-right: 120px;
-}
-
-.foot-social-title {
-    display: block;
-    color:  #FFFFFF ;
+.features-header {
+    font-family: "Roboto";
+    color: #2e2f42;
+    font-size: 20px;
     font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px; 
+}
+.features-text {
+    color: #434455;
     font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 16px;
 }
 
-.foot-social-section {
-    display: block;
-    width: 208px;
+.header-content {
+    background-color: #F4F4FD;
+    padding: 120px 0
 }
-
-.foot-social-list {
+.our-team-container {
     display: flex;
-    gap: 16px;
+    flex-direction: column;
+    align-items: center;
 }
+.our-team-title {
+    margin-bottom: 72px; 
+}
+.our-team-list {
+    display: flex; 
+    gap: 24px;
+}
+.our-team-item {
+    width: calc((100% - 72px) / 4); 
+    color:  #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px; 
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+}
+.info-member {
+    padding: 32px 0 ;
+}
+.card-title {
+    color: #2e2f42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    background-color: #FFFFFF;
+    text-align: center; 
+    margin-bottom: 8px;
+}
+.card-content {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.our-portfolio {
+    padding-top: 120px; 
+    padding-bottom: 120px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+}
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-title-portfolio {
+    color:  #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px; 
+}
+.portfolio-list {
+    display: flex ;
+    flex-wrap: wrap; 
+    column-gap: 24px; 
+    row-gap: 48px;
+    padding-left: 0;
+}
+.portfolio-list-content {
 
-.foot-social-item {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 40px;
-    height: 40px;
+    width: calc((100% - 48px) / 3); 
+    box-sizing: content-box;
+    display: inline-block;
+    width: 360px;
+    height: 420px;
+    /* border: 1px solid #e7e9fc;  */
+    border-top: none; 
     
 }
+.name-of-product {
+    width: 360px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+    justify-content: center;
+    
+}
+   
 
-.foot-social-item .icon-link:hover,
-.foot-social-item .icon-link:focus,
-.foot-social-item .icon-link:active {
-    cursor: pointer;
-    background-color: #31d0aa;
+.project-title {
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px
+}
+.project-content {
+    color:  #434455;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.features-footer {
+    background: #2e2f42;
+    padding: 100px 0;
+  
 }
 
-.icon-link {
-    width: 100%;
-    height: 100%;
-    background-color: #4d5ae5;
-    display: flex;
-     border-radius: 50%;
-     justify-content: center;
-
+.project-content-list {
+    color: #f4f4fd;
+            font-family: "Roboto";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
 }

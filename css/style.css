@@ -78,9 +78,6 @@ section {
     justify-content: space-between;
     align-items: center;
 }
-.top-menu {
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);;
-}
 
 .foot .container {
     max-width: 1158px;
@@ -93,8 +90,7 @@ section {
 .top-menu {
     padding: 24px 0px;
     border-bottom: 1px solid var(--cornf);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .top-menu a {
@@ -357,11 +353,11 @@ section {
 .team-social-item .icon-link:focus,
 .team-social-item .icon-link:active {
     cursor: pointer;
-    background-color: var(--ocean);
+    background-color: #404bbf;
 }
 
 .social-icons {
-    fill: var(--cloud);
+    fill: #f4f4fd ;
 }
 
 .our-portfolio-list {

@@ -29,6 +29,8 @@ body {
 
 .our-team-general {
     background-color: var(--cloud);
+    display:inline-block;
+
 }
 
 .foot {
@@ -77,6 +79,11 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .foot .container {
@@ -301,6 +308,10 @@ section {
     text-align: center;
 }
 
+.container-our-team {
+display: flex;
+}
+
 .subsection-paragraph {
     font-weight: 400;
 }
@@ -357,7 +368,8 @@ section {
 }
 
 .social-icons {
-    fill: #f4f4fd ;
+    fill: none ;
+    stroke: #f4f4fd ;
 }
 
 .our-portfolio-list {

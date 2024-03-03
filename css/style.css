@@ -375,9 +375,8 @@ transition : color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 420px;
     position: relative;
     border-top: none; 
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .name-of-product {
     width: 360px;
@@ -395,19 +394,19 @@ transition : color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0%);
 }
 .name-of-product-p {
-    height: 100%; 
-    width: 100%; 
-    position: absolute;
-    top: 0; 
-    left: 0;
-    font-size: 16px; 
-    line-height: 1.5;
-    letter-spacing: 0.02em; 
-    color: #f4f4fd; 
-    padding: 40px 32px;
-    background-color: #4d5ae5;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    position: absolute; /* Позиціонування */
+    top: 0; /* Розміщення вгорі контейнера */
+    left: 0; /* Розміщення ліворуч контейнера */
+    width: 100%; /* Розтягнення на всю ширину контейнера */
+    height: 100%; /* Розтягнення на всю висоту контейнера */
+    padding: 40px 32px; /* Відступи */
+    background-color: #4d5ae5; /* Колір фону */
+    color: #f4f4fd; /* Колір тексту */
+    font-size: 16px; /* Розмір шрифту */
+    line-height: 1.5; /* Міжрядковий інтервал */
+    letter-spacing: 0.02em; /* Міжлітерний інтервал */
+    transform: translateY(100%); /* Початкова позиція */
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна transform */ 
 }
    
 
